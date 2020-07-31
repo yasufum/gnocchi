@@ -34,6 +34,6 @@ def upgrade():
     op.create_check_constraint("ck_started_before_ended",
                                "resource",
                                "started_at <= ended_at")
-    op.create_check_constraint("ck_started_before_ended",
+    op.create_check_constraint("ck_started_before_ended2",
                                "resource_history",
                                "started_at <= ended_at")
